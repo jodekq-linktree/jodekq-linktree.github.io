@@ -1,0 +1,90 @@
+@import "./props.less";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap'); 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:visited { text-decoration: none; color: var(--font-color);}
+a:hover { text-decoration: none; color: var(--font-color);}
+a:focus { text-decoration: none; color: var(--font-color);}
+a:hover, a:active { text-decoration: none; color: var(--font-color);}
+
+
+body {
+    font-family: var(--font-family-1);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.section-divide { // 30px high section divider for different sections
+    width: 100%;
+    height: 30px;
+}
+
+.profile-image {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    img {
+        height: 100px;
+    }
+}
+
+.profile-name {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    span {
+        font-size: var(--big-font-size);
+    }
+}
+
+.profile-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    .link-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 50px;
+        width: 200px;
+        background-color: var(--color-1);
+
+        border-radius: 50px;
+
+        border-style: solid;
+        border-color: var(--shadow);
+    
+        box-shadow: 5px 5px var(--shadow);
+        transition: box-shadow 0.2s linear;
+
+        &:hover {
+            box-shadow: 2px 2px var(--shadow);
+        }
+    }
+}
